@@ -1,6 +1,0 @@
-r
-halt
-loadfile "d:\RM\RM_code\Sentry\MDK-ARM\Sentry\Sentry.hex"
-r
-go
-exit

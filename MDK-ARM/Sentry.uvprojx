@@ -314,7 +314,7 @@
           </ArmAdsMisc>
           <Cads>
             <interw>1</interw>
-            <Optim>2</Optim>
+            <Optim>1</Optim>
             <oTime>0</oTime>
             <SplitLS>0</SplitLS>
             <OneElfS>1</OneElfS>
@@ -340,7 +340,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32H723xx,__FPU_PRESENT=1,__FPU_USED=1,ARM_MATH_CM7</Define>
               <Undefine></Undefine>
-              <IncludePath>../Core/Inc;../Drivers/STM32H7xx_HAL_Driver/Inc;../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy;../USB_DEVICE/App;../USB_DEVICE/Target;../Middlewares/ST/STM32_USB_Device_Library/Core/Inc;../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc;../Drivers/CMSIS/Device/ST/STM32H7xx/Include;../User/Congfig;../User/Task;../User/Interaction;../User/Chariot;../User/Device;../User/Middleware/Driver;../User/Middleware/Algorithm</IncludePath>
+              <IncludePath>../Core/Inc;../Drivers/STM32H7xx_HAL_Driver/Inc;../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy;../USB_DEVICE/App;../USB_DEVICE/Target;../Middlewares/ST/STM32_USB_Device_Library/Core/Inc;../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc;../Drivers/CMSIS/Device/ST/STM32H7xx/Include;..\User\Congfig\Inc;..\User\Task\Inc;..\User\Interaction\Inc;..\User\Chariot\Inc;..\User\Device\Inc;..\User\Driver\Inc;..\User\Algorithm\Inc</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -387,7 +387,7 @@
             <File>
               <FileName>config.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\User\Congfig\config.cpp</FilePath>
+              <FilePath>..\User\Congfig\Src\config.cpp</FilePath>
             </File>
           </Files>
         </Group>
@@ -397,7 +397,7 @@
             <File>
               <FileName>tsk_config_and_callback.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\User\Task\tsk_config_and_callback.cpp</FilePath>
+              <FilePath>..\User\Task\Src\tsk_config_and_callback.cpp</FilePath>
             </File>
           </Files>
         </Group>
@@ -407,7 +407,7 @@
             <File>
               <FileName>ita_chariot.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\User\Interaction\ita_chariot.cpp</FilePath>
+              <FilePath>..\User\Interaction\Src\ita_chariot.cpp</FilePath>
             </File>
           </Files>
         </Group>
@@ -417,17 +417,17 @@
             <File>
               <FileName>crt_booster.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\User\Chariot\crt_booster.cpp</FilePath>
+              <FilePath>..\User\Chariot\Src\crt_booster.cpp</FilePath>
             </File>
             <File>
               <FileName>crt_chassis.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\User\Chariot\crt_chassis.cpp</FilePath>
+              <FilePath>..\User\Chariot\Src\crt_chassis.cpp</FilePath>
             </File>
             <File>
               <FileName>crt_gimbal.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\User\Chariot\crt_gimbal.cpp</FilePath>
+              <FilePath>..\User\Chariot\Src\crt_gimbal.cpp</FilePath>
             </File>
           </Files>
         </Group>
@@ -435,84 +435,54 @@
           <GroupName>Device</GroupName>
           <Files>
             <File>
-              <FileName>CharSendTask.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>..\User\Device\CharSendTask.cpp</FilePath>
-            </File>
-            <File>
               <FileName>dvc_boardc_bmi088.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\User\Device\dvc_boardc_bmi088.cpp</FilePath>
+              <FilePath>..\User\Device\Src\dvc_boardc_bmi088.cpp</FilePath>
             </File>
             <File>
               <FileName>dvc_djimotor.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\User\Device\dvc_djimotor.cpp</FilePath>
+              <FilePath>..\User\Device\Src\dvc_djimotor.cpp</FilePath>
             </File>
             <File>
               <FileName>dvc_dmmotor.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\User\Device\dvc_dmmotor.cpp</FilePath>
+              <FilePath>..\User\Device\Src\dvc_dmmotor.cpp</FilePath>
             </File>
             <File>
               <FileName>dvc_dr16.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\User\Device\dvc_dr16.cpp</FilePath>
+              <FilePath>..\User\Device\Src\dvc_dr16.cpp</FilePath>
             </File>
             <File>
               <FileName>dvc_dwt.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\User\Device\dvc_dwt.cpp</FilePath>
+              <FilePath>..\User\Device\Src\dvc_dwt.cpp</FilePath>
             </File>
             <File>
               <FileName>dvc_imu.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\User\Device\dvc_imu.cpp</FilePath>
+              <FilePath>..\User\Device\Src\dvc_imu.cpp</FilePath>
             </File>
             <File>
               <FileName>dvc_lkmotor.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\User\Device\dvc_lkmotor.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>dvc_manifold.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>..\User\Device\dvc_manifold.cpp</FilePath>
+              <FilePath>..\User\Device\Src\dvc_lkmotor.cpp</FilePath>
             </File>
             <File>
               <FileName>dvc_minipc.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\User\Device\dvc_minipc.cpp</FilePath>
+              <FilePath>..\User\Device\Src\dvc_minipc.cpp</FilePath>
             </File>
             <File>
               <FileName>dvc_referee.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\User\Device\dvc_referee.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>dvc_sampler.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>..\User\Device\dvc_sampler.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>dvc_serialplot.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>..\User\Device\dvc_serialplot.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>dvc_servo.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>..\User\Device\dvc_servo.cpp</FilePath>
+              <FilePath>..\User\Device\Src\dvc_referee.cpp</FilePath>
             </File>
             <File>
               <FileName>dvc_supercap.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\User\Device\dvc_supercap.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>dvc_witahrs.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>..\User\Device\dvc_witahrs.cpp</FilePath>
+              <FilePath>..\User\Device\Src\dvc_supercap.cpp</FilePath>
             </File>
           </Files>
         </Group>
@@ -522,52 +492,52 @@
             <File>
               <FileName>drv_adc.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\User\Middleware\Driver\drv_adc.cpp</FilePath>
+              <FilePath>..\User\Driver\Src\drv_adc.cpp</FilePath>
             </File>
             <File>
               <FileName>drv_bsp-boarda.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\User\Middleware\Driver\drv_bsp-boarda.cpp</FilePath>
+              <FilePath>..\User\Driver\Src\drv_bsp-boarda.cpp</FilePath>
             </File>
             <File>
               <FileName>drv_can.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\User\Middleware\Driver\drv_can.cpp</FilePath>
+              <FilePath>..\User\Driver\Src\drv_can.cpp</FilePath>
             </File>
             <File>
               <FileName>drv_dwt.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\User\Middleware\Driver\drv_dwt.cpp</FilePath>
+              <FilePath>..\User\Driver\Src\drv_dwt.cpp</FilePath>
             </File>
             <File>
               <FileName>drv_i2c.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\User\Middleware\Driver\drv_i2c.cpp</FilePath>
+              <FilePath>..\User\Driver\Src\drv_i2c.cpp</FilePath>
             </File>
             <File>
               <FileName>drv_math.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\User\Middleware\Driver\drv_math.cpp</FilePath>
+              <FilePath>..\User\Driver\Src\drv_math.cpp</FilePath>
             </File>
             <File>
               <FileName>drv_spi.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\User\Middleware\Driver\drv_spi.cpp</FilePath>
+              <FilePath>..\User\Driver\Src\drv_spi.cpp</FilePath>
             </File>
             <File>
               <FileName>drv_tim.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\User\Middleware\Driver\drv_tim.cpp</FilePath>
+              <FilePath>..\User\Driver\Src\drv_tim.cpp</FilePath>
             </File>
             <File>
               <FileName>drv_uart.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\User\Middleware\Driver\drv_uart.cpp</FilePath>
+              <FilePath>..\User\Driver\Src\drv_uart.cpp</FilePath>
             </File>
             <File>
               <FileName>drv_usb.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\User\Middleware\Driver\drv_usb.cpp</FilePath>
+              <FilePath>..\User\Driver\Src\drv_usb.cpp</FilePath>
             </File>
           </Files>
         </Group>
@@ -577,52 +547,52 @@
             <File>
               <FileName>alg_filter.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\User\Middleware\Algorithm\alg_filter.cpp</FilePath>
+              <FilePath>..\User\Algorithm\Src\alg_filter.cpp</FilePath>
             </File>
             <File>
               <FileName>alg_fsm.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\User\Middleware\Algorithm\alg_fsm.cpp</FilePath>
+              <FilePath>..\User\Algorithm\Src\alg_fsm.cpp</FilePath>
             </File>
             <File>
               <FileName>alg_MahonyAHRS.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\User\Middleware\Algorithm\alg_MahonyAHRS.cpp</FilePath>
+              <FilePath>..\User\Algorithm\Src\alg_MahonyAHRS.cpp</FilePath>
             </File>
             <File>
               <FileName>alg_pid.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\User\Middleware\Algorithm\alg_pid.cpp</FilePath>
+              <FilePath>..\User\Algorithm\Src\alg_pid.cpp</FilePath>
             </File>
             <File>
               <FileName>alg_power_limit.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\User\Middleware\Algorithm\alg_power_limit.cpp</FilePath>
+              <FilePath>..\User\Algorithm\Src\alg_power_limit.cpp</FilePath>
             </File>
             <File>
               <FileName>alg_slope.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\User\Middleware\Algorithm\alg_slope.cpp</FilePath>
+              <FilePath>..\User\Algorithm\Src\alg_slope.cpp</FilePath>
             </File>
             <File>
               <FileName>kalman_filter.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\User\Middleware\Algorithm\kalman_filter.cpp</FilePath>
+              <FilePath>..\User\Algorithm\Src\kalman_filter.cpp</FilePath>
             </File>
             <File>
               <FileName>PID.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\User\Middleware\Algorithm\PID.cpp</FilePath>
+              <FilePath>..\User\Algorithm\Src\PID.cpp</FilePath>
             </File>
             <File>
               <FileName>QuaternionEKF.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\User\Middleware\Algorithm\QuaternionEKF.cpp</FilePath>
+              <FilePath>..\User\Algorithm\Src\QuaternionEKF.cpp</FilePath>
             </File>
             <File>
               <FileName>user_lib.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\User\Middleware\Algorithm\user_lib.cpp</FilePath>
+              <FilePath>..\User\Algorithm\Src\user_lib.cpp</FilePath>
             </File>
           </Files>
         </Group>

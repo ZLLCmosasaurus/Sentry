@@ -29,7 +29,8 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+//#include "arm_math.h"
+#include "tsk_config_and_callback.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -111,13 +112,15 @@ int main(void)
   MX_TIM5_Init();
   MX_TIM4_Init();
   /* USER CODE BEGIN 2 */
-
+  Task_Init();
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+    tmp_test++;
+    Task_Loop();
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

@@ -1,0 +1,8 @@
+{
+    "Target_Name": "Sentry",
+    "Device_Name": "STM32H723VG",
+    "Svd_File": "STM32H723VG.svd",
+    "files.associations": {
+        "tsk_config_and_callback.h": "c"
+    }
+}

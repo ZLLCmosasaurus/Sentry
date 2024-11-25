@@ -5,13 +5,17 @@
   "srcDirs": [],
   "virtualFolder": {
     "name": "<virtual_root>",
-    "files": [],
+    "files": [
+      {
+        "path": "../Drivers/CMSIS/DSP/Lib/ARM/arm_cortexM7l_math.lib"
+      }
+    ],
     "folders": [
       {
         "name": "Config",
         "files": [
           {
-            "path": "../User/Congfig/config.cpp"
+            "path": "../User/Congfig/Src/config.cpp"
           }
         ],
         "folders": []
@@ -20,7 +24,7 @@
         "name": "Task",
         "files": [
           {
-            "path": "../User/Task/tsk_config_and_callback.cpp"
+            "path": "../User/Task/Src/tsk_config_and_callback.cpp"
           }
         ],
         "folders": []
@@ -29,7 +33,7 @@
         "name": "Interaction",
         "files": [
           {
-            "path": "../User/Interaction/ita_chariot.cpp"
+            "path": "../User/Interaction/Src/ita_chariot.cpp"
           }
         ],
         "folders": []
@@ -38,13 +42,13 @@
         "name": "Chariot",
         "files": [
           {
-            "path": "../User/Chariot/crt_booster.cpp"
+            "path": "../User/Chariot/Src/crt_booster.cpp"
           },
           {
-            "path": "../User/Chariot/crt_chassis.cpp"
+            "path": "../User/Chariot/Src/crt_chassis.cpp"
           },
           {
-            "path": "../User/Chariot/crt_gimbal.cpp"
+            "path": "../User/Chariot/Src/crt_gimbal.cpp"
           }
         ],
         "folders": []
@@ -53,52 +57,34 @@
         "name": "Device",
         "files": [
           {
-            "path": "../User/Device/CharSendTask.cpp"
+            "path": "../User/Device/Src/dvc_boardc_bmi088.cpp"
           },
           {
-            "path": "../User/Device/dvc_boardc_bmi088.cpp"
+            "path": "../User/Device/Src/dvc_djimotor.cpp"
           },
           {
-            "path": "../User/Device/dvc_djimotor.cpp"
+            "path": "../User/Device/Src/dvc_dmmotor.cpp"
           },
           {
-            "path": "../User/Device/dvc_dmmotor.cpp"
+            "path": "../User/Device/Src/dvc_dr16.cpp"
           },
           {
-            "path": "../User/Device/dvc_dr16.cpp"
+            "path": "../User/Device/Src/dvc_dwt.cpp"
           },
           {
-            "path": "../User/Device/dvc_dwt.cpp"
+            "path": "../User/Device/Src/dvc_imu.cpp"
           },
           {
-            "path": "../User/Device/dvc_imu.cpp"
+            "path": "../User/Device/Src/dvc_lkmotor.cpp"
           },
           {
-            "path": "../User/Device/dvc_lkmotor.cpp"
+            "path": "../User/Device/Src/dvc_minipc.cpp"
           },
           {
-            "path": "../User/Device/dvc_manifold.cpp"
+            "path": "../User/Device/Src/dvc_referee.cpp"
           },
           {
-            "path": "../User/Device/dvc_minipc.cpp"
-          },
-          {
-            "path": "../User/Device/dvc_referee.cpp"
-          },
-          {
-            "path": "../User/Device/dvc_sampler.cpp"
-          },
-          {
-            "path": "../User/Device/dvc_serialplot.cpp"
-          },
-          {
-            "path": "../User/Device/dvc_servo.cpp"
-          },
-          {
-            "path": "../User/Device/dvc_supercap.cpp"
-          },
-          {
-            "path": "../User/Device/dvc_witahrs.cpp"
+            "path": "../User/Device/Src/dvc_supercap.cpp"
           }
         ],
         "folders": []
@@ -107,34 +93,34 @@
         "name": "Driver",
         "files": [
           {
-            "path": "../User/Middleware/Driver/drv_adc.cpp"
+            "path": "../User/Driver/Src/drv_adc.cpp"
           },
           {
-            "path": "../User/Middleware/Driver/drv_bsp-boarda.cpp"
+            "path": "../User/Driver/Src/drv_bsp-boarda.cpp"
           },
           {
-            "path": "../User/Middleware/Driver/drv_can.cpp"
+            "path": "../User/Driver/Src/drv_can.cpp"
           },
           {
-            "path": "../User/Middleware/Driver/drv_dwt.cpp"
+            "path": "../User/Driver/Src/drv_dwt.cpp"
           },
           {
-            "path": "../User/Middleware/Driver/drv_i2c.cpp"
+            "path": "../User/Driver/Src/drv_i2c.cpp"
           },
           {
-            "path": "../User/Middleware/Driver/drv_math.cpp"
+            "path": "../User/Driver/Src/drv_math.cpp"
           },
           {
-            "path": "../User/Middleware/Driver/drv_spi.cpp"
+            "path": "../User/Driver/Src/drv_spi.cpp"
           },
           {
-            "path": "../User/Middleware/Driver/drv_tim.cpp"
+            "path": "../User/Driver/Src/drv_tim.cpp"
           },
           {
-            "path": "../User/Middleware/Driver/drv_uart.cpp"
+            "path": "../User/Driver/Src/drv_uart.cpp"
           },
           {
-            "path": "../User/Middleware/Driver/drv_usb.cpp"
+            "path": "../User/Driver/Src/drv_usb.cpp"
           }
         ],
         "folders": []
@@ -143,34 +129,34 @@
         "name": "Algorithm",
         "files": [
           {
-            "path": "../User/Middleware/Algorithm/alg_filter.cpp"
+            "path": "../User/Algorithm/Src/alg_filter.cpp"
           },
           {
-            "path": "../User/Middleware/Algorithm/alg_fsm.cpp"
+            "path": "../User/Algorithm/Src/alg_fsm.cpp"
           },
           {
-            "path": "../User/Middleware/Algorithm/alg_MahonyAHRS.cpp"
+            "path": "../User/Algorithm/Src/alg_MahonyAHRS.cpp"
           },
           {
-            "path": "../User/Middleware/Algorithm/alg_pid.cpp"
+            "path": "../User/Algorithm/Src/alg_pid.cpp"
           },
           {
-            "path": "../User/Middleware/Algorithm/alg_power_limit.cpp"
+            "path": "../User/Algorithm/Src/alg_power_limit.cpp"
           },
           {
-            "path": "../User/Middleware/Algorithm/alg_slope.cpp"
+            "path": "../User/Algorithm/Src/alg_slope.cpp"
           },
           {
-            "path": "../User/Middleware/Algorithm/kalman_filter.cpp"
+            "path": "../User/Algorithm/Src/kalman_filter.cpp"
           },
           {
-            "path": "../User/Middleware/Algorithm/PID.cpp"
+            "path": "../User/Algorithm/Src/PID.cpp"
           },
           {
-            "path": "../User/Middleware/Algorithm/QuaternionEKF.cpp"
+            "path": "../User/Algorithm/Src/QuaternionEKF.cpp"
           },
           {
-            "path": "../User/Middleware/Algorithm/user_lib.cpp"
+            "path": "../User/Algorithm/Src/user_lib.cpp"
           }
         ],
         "folders": []
@@ -539,21 +525,18 @@
           "../Middlewares/ST/STM32_USB_Device_Library/Core/Inc",
           "../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc",
           "../Drivers/CMSIS/Device/ST/STM32H7xx/Include",
-          "../User/Congfig",
-          "../User/Task",
-          "../User/Interaction",
-          "../User/Chariot",
-          "../User/Device",
-          "../User/Middleware/Driver",
-          "../User/Middleware/Algorithm",
+          "../User/Congfig/Inc",
+          "../User/Task/Inc",
+          "../User/Interaction/Inc",
+          "../User/Chariot/Inc",
+          "../User/Device/Inc",
+          "../User/Driver/Inc",
+          "../User/Algorithm/Inc",
           "RTE/_Sentry",
-          ".cmsis/include",
-          "../DSP/Include",
-          "../DSP/Include/dsp"
+          "../Drivers/CMSIS/DSP/Include",
+          "../Drivers/CMSIS/Core/Include"
         ],
-        "libList": [
-          "../DSP"
-        ],
+        "libList": [],
         "defineList": [
           "USE_HAL_DRIVER",
           "STM32H723xx",
@@ -572,7 +555,7 @@
             "output-debug-info": "enable"
           },
           "c/cpp-compiler": {
-            "optimization": "level-1",
+            "optimization": "level-0",
             "language-c": "c99",
             "language-cpp": "c++11",
             "link-time-optimization": false,

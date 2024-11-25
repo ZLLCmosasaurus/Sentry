@@ -4,6 +4,11 @@
             "path": "."
         }
     ],
-    "settings": {},
+    "settings": {
+        "files.associations": {
+            "main.h": "c",
+            "stm32h7xx_hal.h": "c"
+        }
+    },
     "extensions": {}
 }
